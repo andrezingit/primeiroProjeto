@@ -1,0 +1,18 @@
+﻿@model int?
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Página Index</h1>
+    <p></p>
+    @if (Model.HasValue)
+    {
+        <p>Possui parâmetro, valor: @Model.Value!</p>
+    } 
+    else
+    {
+        <p>Não possui valor atrelado!</p>
+    }
+</div>
